@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path
+        name="root"
+        path="." />
+    <external-files-path
+        name="my_images"
+        path="Android/data/com.example.covenstudentportal/files/Pictures" />
+    <external-files-path
+        name="my_videos"
+        path="Android/data/com.example.covenstudentportal/files/Videos" />
+    <files-path
+        name="member_images"
+        path="Pictures/Members" />
+</paths>

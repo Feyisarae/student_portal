@@ -1,0 +1,160 @@
+<resources>
+    <string name="app_name">Student Portal</string>
+    <string name="back">Back</string>
+    <string name="enter_login_details">Please Login to Continue</string>
+    <string name="enter_username">Enter Your Username</string>
+    <string name="enter_password">Enter Your Password</string>
+    <string name="login">Sign In</string>
+    <string name="welcome">Welcome</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_body">Enter your details below to sign up as an admin</string>
+    <string name="enter_first_name">Enter your first name</string>
+    <string name="enter_last_name">Enter your last name</string>
+    <string name="enter_phone_no">Enter your phone number</string>
+    <string name="enter_address">Enter your home address</string>
+    <string name="create_username">Create Your Username</string>
+    <string name="create_password">Create Your password</string>
+    <string name="confirm_password">Confirm Your password</string>
+    <string name="home_activity_desc">What would you like to do today?</string>
+    <string name="register_student">Register new student</string>
+    <string name="register_student_story">Enter the details of the students accurately to register the students. All fields are compulsory.</string>
+    <string name="next">Next</string>
+    <string name="enter_student_first_name">Enter student first name</string>
+    <string name="enter_student_last_name">Enter student last name</string>
+    <string name="enter_student_dob">Enter student date of birth</string>
+    <string name="enter_student_state">Enter student state of origin</string>
+    <string name="enter_faculty">Enter student faculty</string>
+    <string name="enter_department">Enter student department</string>
+    <string name="entry_year">Enter year of admission</string>
+    <string name="enter_student_address">Enter student address</string>
+    <string name="name">Name</string>
+    <string name="department">Department</string>
+    <string name="proceed_to_take_picture">Proceed to Camera</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_list">Student List</string>
+    <string name="student_list_story">Click a student to view student profile</string>
+    <string name="invalid_phone_number">Invalid Phone Number! Enter a valid phone number</string>
+    <string name="passwords_do_not_match">Passwords do not match!</string>
+    <string name="username_taken">Username Taken</string>
+    <string name="is_required_error">This value is required.</string>
+    <string name="view_student_profile">View Student Profile</string>
+    <string name="analytics_view">Analytics View</string>
+    <string name="enter_student_phone_no">Enter student phone number</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="search">Search by name, student Id, department, etc</string>
+    <string name="filter_by">Filter by</string>
+    <string name="invalidate_search">Invalidate Search</string>
+    <string name="blacklisted">Blacklisted!!!</string>
+    <string name="all">All</string>
+    <string name="year_of_entry">Entry Year</string>
+    <string name="search_by">Search By</string>
+    <string name="gender">Gender</string>
+    <string name="edit_details_body">Click the edit button to edit student details.</string>
+    <string name="edit_student_details">Edit Student Details</string>
+    <string name="middle_name">Middle name</string>
+    <string name="name_empty_error">Name can\'t be empty</string>
+    <string name="enter_minimum_of_x_chars">Enter minimum of 2 characters</string>
+    <string name="invalid_format_error">Invalid format</string>
+    <string name="blacklist">Blacklist</string>
+    <string name="studentBlacklisted">Student Blacklisted</string>
+
+    <string-array name="nigeria_states">
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>Federal Capital Territory (FCT)</item>
+    </string-array>
+
+    <string-array name="faculties">
+        <item>Engineering</item>
+        <item>Science</item>
+        <item>Arts</item>
+        <item>Business Administration</item>
+        <item>Medicine</item>
+        <item>Social Sciences</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="engineering_departments">
+        <item>Electrical Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Computer Engineering</item>
+    </string-array>
+
+    <string-array name="science_departments">
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>Biology</item>
+        <item>Mathematics</item>
+    </string-array>
+
+    <string-array name="arts_departments">
+        <item>English</item>
+        <item>History</item>
+        <item>Philosophy</item>
+    </string-array>
+
+    <string-array name="business_administration_departments">
+        <item>Marketing</item>
+        <item>Finance</item>
+        <item>Management</item>
+    </string-array>
+
+    <string-array name="medicine_departments">
+        <item>Internal Medicine</item>
+        <item>Surgery</item>
+        <item>Pediatrics</item>
+    </string-array>
+
+    <string-array name="social_sciences_departments">
+        <item>Psychology</item>
+        <item>Sociology</item>
+        <item>Political Science</item>
+    </string-array>
+
+    <string-array name="empty">
+
+    </string-array>
+
+
+</resources>

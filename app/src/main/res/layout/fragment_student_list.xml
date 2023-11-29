@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".homeScreen.views.appHome.AppHomeActivity">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="startedSearch"
+            type="Boolean" />
+        <variable
+            name="fieldsComplete"
+            type="Boolean" />
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Gray_2"
+        android:fitsSystemWindows="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/content_constraint_layout"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:padding="12dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/icon_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/portal_icon"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_page_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:text="@string/student_list"
+                android:textColor="@color/Gray_6"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/content_constraint_layout"
+                app:layout_constraintStart_toEndOf="@+id/content_constraint_layout"
+                app:layout_constraintTop_toTopOf="@+id/content_constraint_layout" />
+
+            <TextView
+                android:id="@+id/tv_page_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/filter_by"
+                android:textColor="@color/Gray_6"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/filter_by"
+                app:layout_constraintEnd_toStartOf="@+id/filter_by" />
+
+            <TextView
+                android:id="@+id/tv_page_desc"
+                android:textColor="@color/Gray_6"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/student_list_story"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/content_constraint_layout" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/Gray_3"
+                android:drawableEnd="@drawable/search_icon"
+                android:foreground="@drawable/searchview_background"
+                android:hint="@string/search"
+                android:inputType="textAutoComplete"
+                android:padding="10dp"
+                android:textColorHint="@color/Gray_6"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_page_desc" />
+
+            <ImageButton
+                android:id="@+id/imageButtonStopSearch"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/invalidate_search"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/search"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/search"
+                app:layout_constraintTop_toTopOf="@id/search"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/filter_by"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="@color/Gray_4"
+                android:padding="5dp"
+                android:paddingHorizontal="5dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintTop_toBottomOf="@+id/search">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="5dp">
+
+                    <Spinner
+                        android:id="@+id/spinnerOptions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <ImageView
+                android:id="@+id/image_view"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="100dp"
+                app:layout_constraintTop_toBottomOf="@id/filter_by"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="@{startedSearch ? View.GONE : View.VISIBLE}"
+                android:src="@drawable/search_icon" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_admin_activities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/filter_by"
+                tools:itemCount="2"
+                tools:listitem="@layout/cardview_student_list" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="54dp"
+                android:height="54dp"
+                android:backgroundTint="@{fieldsComplete ? @color/Gray_6 : @color/white}"
+                android:enabled="@{fieldsComplete}"
+                android:layout_marginTop="50dp"
+                android:text="@string/next"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:cornerRadius="10dp"
+                android:textColor="@{fieldsComplete ? @color/Gray_2 : @color/text_disabled}"
+                app:strokeColor="@{fieldsComplete ? @color/Gray_6 : @color/text_disabled}"
+                app:strokeWidth="1dp"
+                tools:strokeColor="@color/Gray_6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rv_admin_activities" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

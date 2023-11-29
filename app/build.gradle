@@ -1,0 +1,181 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'androidx.navigation.safeargs'
+    id "com.google.firebase.crashlytics"
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.studentportal"
+        minSdk 24
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    //Binding
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    implementation('com.googlecode.libphonenumber:libphonenumber:8.12.37')
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+    implementation 'androidx.databinding:databinding-runtime:4.1.3'
+
+    //Password Hashing Dependency
+    implementation group: 'at.favre.lib', name: 'bcrypt', version: '0.9.0'
+
+    // Room Database Library \\
+    implementation("androidx.room:room-runtime:2.4.0")
+    annotationProcessor("androidx.room:room-compiler:2.4.0")
+    // To use Kotlin annotation processing tool (kapt)
+    kapt("androidx.room:room-compiler:2.4.0")
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:2.4.0")
+    // optional - Paging 3 Integration
+    implementation("androidx.room:room-paging:2.4.0-alpha04")
+
+    // Paging 2 Library \\
+    implementation "androidx.paging:paging-runtime-ktx:3.0.1"
+    // alternatively - without Android dependencies for testing
+    testImplementation "androidx.paging:paging-common-ktx:3.0.1"
+    // optional - RxJava support
+    implementation("androidx.paging:paging-rxjava2-ktx:3.0.1")
+
+
+    //Navigation Library \\
+    implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
+    implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.5")
+    // Testing Navigation
+    androidTestImplementation("androidx.navigation:navigation-testing:2.3.5")
+
+    // Work Manager Library \\
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:2.7.1")
+
+    //Logging
+    implementation 'com.jakewharton.timber:timber:5.0.1'
+
+    //ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0"
+    //LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.0"
+
+    //Flurry Analytics
+    implementation 'com.flurry.android:analytics:13.1.0@aar'
+    implementation "com.google.android.gms:play-services-analytics:18.0.1"
+
+    //Retrofit Dependencies
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+
+    // Dagger
+    implementation 'com.google.dagger:dagger:2.42'
+    kapt 'com.google.dagger:dagger-compiler:2.42'
+
+    // Material date and time picker with extra methods
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+    def room_version = "2.2.0-beta01"
+    implementation "androidx.room:room-runtime:2.2.0-beta01"
+    annotationProcessor "androidx.room:room-compiler:2.4.0-beta01"
+    implementation 'com.jakewharton:butterknife:+'
+    implementation "com.google.android.gms:play-services-vision:20.1.3"
+
+
+    // picasso
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+    //for csv export
+    implementation 'com.opencsv:opencsv:4.6'
+
+    //for iTextG library
+    implementation 'com.itextpdf:itextg:5.5.10'
+
+    // Dagger
+    implementation 'com.google.dagger:dagger:2.40'
+    kapt 'com.google.dagger:dagger-compiler:2.40'
+
+    //Excel data Export
+    implementation 'org.apache.poi:poi:3.9'
+    implementation 'com.opencsv:opencsv:4.6'
+
+    def camerax_version = "1.1.0-rc01"
+
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    implementation "androidx.camera:camera-video:${camerax_version}"
+
+    implementation "androidx.camera:camera-view:${camerax_version}"
+    implementation "androidx.camera:camera-extensions:${camerax_version}"
+
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+
+    // Add the dependency for the Firebase SDK for Google Analytics
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-crashlytics-ktx'
+
+    //Glide(Images)\\
+    implementation 'com.github.bumptech.glide:glide:4.14.2'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+
+}
+
+//This allows us to copy the hook script into .git folder everytime the app is being built. Hence ensure that the git-hook is consistent and transferred via version control
+task installGitHook(type: Copy) {
+    from new File(rootProject.rootDir, 'scripts/pre-commit')
+    into { new File(rootProject.rootDir, '.git/hooks') }
+    fileMode 0777
+}
+
+tasks.getByPath(':app:preBuild').dependsOn(installGitHook)

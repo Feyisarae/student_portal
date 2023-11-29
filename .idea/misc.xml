@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/coven/.gradle/caches/transforms-3/c1e509813aab1aa7011ae424aaef26e2/transformed/appcompat-1.6.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.25" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/drawable/ic_close.xml" value="0.1" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/drawable/search_icon.xml" value="0.1" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/drawable/searchview_background.xml" value="0.1" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/cardview_admin_activity.xml" value="0.2" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/cardview_student_list.xml" value="0.25" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/footer_layout.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_login_screen.xml" value="0.16296296296296298" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_portal_start.xml" value="0.20471014492753623" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_signup_screen.xml" value="0.1" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_student_list.xml" value="0.25" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_student_profile.xml" value="0.264" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/fragment_student_registration_form.xml" value="0.32019704433497537" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/portal_layout.xml" value="0.24895833333333334" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/search_view_background.xml" value="0.2484375" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/layout/selected_spinner_item.xml" value="0.15260416666666668" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.245" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/xml/file_paths.xml" value="0.15625" />
+        <entry key="..\:/Users/coven/AndroidStudioProjects/CovenStudentPortal/app/src/main/res/xml/layout_portal_main_activity.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
